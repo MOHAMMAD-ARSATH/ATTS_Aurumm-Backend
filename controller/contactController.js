@@ -18,7 +18,7 @@ exports.addContact = async (req, res) => {
     email,
     phone,
     budget,
-    message,
+    message: message?.trim() || null,
   });
 
   try {
